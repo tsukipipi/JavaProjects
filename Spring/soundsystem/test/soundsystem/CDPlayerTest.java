@@ -1,7 +1,11 @@
 package soundsystem;
 
+//import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.assertNotNull;
+
+import org.junit.Rule;
 import org.junit.Test;
+//import org.junit.contrib.java.lang.system.StandardOutputStreamLog;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
@@ -15,7 +19,12 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 @ContextConfiguration(classes = CDPlayerConfig.class)
 public class CDPlayerTest {
 
-    //Autowired 注释：
+    @Rule
+    //public final StandardOutputStreamLog log = new StandardOutputStreamLog();
+
+    @Autowired
+    private MediaPlayer player;
+
     @Autowired
     private CompactDisc cd;
 
@@ -24,6 +33,13 @@ public class CDPlayerTest {
         //断言cd是否为null。
         //若cd不为null，即Spring能发现CompactDisc类，自动在Spring上下文创建其bean并注入到测试代码的cd
         assertNotNull(cd);
+    }
+
+    @Test
+    public void play(){
+        player.play();
+        //assertEquals("Playing Sgt. Pepper's Lonely Hearts Club Band" +
+        //" by The Beatles\n",log.getLog());
     }
 
 }
