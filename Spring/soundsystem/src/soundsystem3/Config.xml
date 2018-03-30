@@ -4,13 +4,22 @@
        xmlns:c="http://www.springframework.org/schema/c"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id = "compactDisc" class = "soundsystem3.SgtPeppers" />
+    <bean id = "compactDiscSgt" class = "soundsystem3.SgtPeppers" />
     <bean id = "cdPlayer" class = "soundsystem3.CDPlayer">
-            <constructor-arg ref = "compactDisc" />
+            <constructor-arg ref = "compactDiscSgt" />
     </bean>
+    <bean id = "compactDiscBlank" class="soundsystem3.BlankDisc">
+        <constructor-arg value = "Sgt. Pepper's Lonely Hearts Club Band" />
+        <constructor-arg value = "The Beatles" />
+    </bean>
+
     <!--
     <bean id = "cdPlayer" class="soundsystem3.CDPlayer"
           c:cd-ref = "compactDisc" />
+    <bean id = "compactDiscBlank" class="soundsystem3.BlankDisc"
+          c:_title = "Sgt. Pepper's Lonely Hearts Club Band"
+          c:_1 = "The Beatles"/>
      -->
+
 
 </beans>
