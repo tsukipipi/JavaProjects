@@ -1,4 +1,4 @@
-package soundsystem;
+package soundsystem2;
 
 import static junit.framework.TestCase.assertNotNull;
 import org.junit.Test;
