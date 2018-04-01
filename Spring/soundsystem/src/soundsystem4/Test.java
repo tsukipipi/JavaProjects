@@ -9,8 +9,10 @@ public class Test {
 
         //声明Spring应用上下文，采用xml配置
         ApplicationContext context = new ClassPathXmlApplicationContext("\\soundsystem4\\Config.xml");
-        CompactDisc cd = (CompactDisc) context.getBean("compactDiscSgt");
-        cd.play();
+        CompactDisc cd1 = (CompactDisc) context.getBean("compactDiscSgt");
+        CompactDisc cd2 = (CompactDisc) context.getBean("compactDiscBlank");
+        cd1.play();
+        cd2.play();
 
     }
 
