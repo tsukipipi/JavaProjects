@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:c="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id = "compactDiscSgt" class="soundsystem4.SgtPeppers"/>
+
+    <bean id = "cdPlayer" class = "soundsystem4.CDPlayer" >
+        <property name="compactDisc" ref = "compactDiscSgt"/>
+    </bean>
+
+    <!--不适用于集合
+    <bean id = "cdPlayer" class="soundsystem4.CDPlayer"
+          p:cd-ref = "compactDisc" />
+    <bean id = "compactDiscBlank" class="soundsystem3.BlankDisc"
+          c:_title = "Sgt. Pepper's Lonely Hearts Club Band"
+          c:_1 = "The Beatles"/>
+     -->
+
+
+</beans>

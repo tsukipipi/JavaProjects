@@ -11,9 +11,24 @@
     <bean id = "compactDiscBlank" class="soundsystem3.BlankDisc">
         <constructor-arg value = "Sgt. Pepper's Lonely Hearts Club Band" />
         <constructor-arg value = "The Beatles" />
+        <constructor-arg>
+            <!--list元素也可以用set元素来替代-->
+            <list>
+                <value>A</value>
+                <value>B</value>
+                <value>C</value>
+                <value>D</value>
+                <value>E</value>
+                <value>F</value>
+                <value>G</value>
+                <value>H</value>
+                <value>I</value>
+                <value>J</value>
+            </list>
+        </constructor-arg>
     </bean>
 
-    <!--
+    <!--不适用于集合
     <bean id = "cdPlayer" class="soundsystem3.CDPlayer"
           c:cd-ref = "compactDisc" />
     <bean id = "compactDiscBlank" class="soundsystem3.BlankDisc"
