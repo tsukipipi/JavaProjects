@@ -3,6 +3,7 @@ package soundsystem5;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
@@ -18,16 +19,22 @@ import static org.junit.Assert.*;
 public class ConfigTest {
 
     @Autowired
+    @Qualifier("cdPlayer")
     private MediaPlayer player;
 
     @Autowired
-    private CompactDisc cd;
+    @Qualifier("sgtPeppers")
+    private CompactDisc cd1;
+
+    @Autowired
+    @Qualifier("BlankDisc")
+    private CompactDisc cd2;
 
     @Test
     public void cdShouldNotBeNull() {
-        //断言cd是否为null
-        //若cd不为null，即Spring能发现CompactDisc类，自动在Spring上下文创建其bean并注入到测试代码的cd
-        assertNotNull(cd);
+        //断言是否为null
+        assertNotNull(cd1);
+        assertNotNull(cd2);
         assertNotNull(player);
     }
 

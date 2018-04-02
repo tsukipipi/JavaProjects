@@ -12,16 +12,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CDConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/soundsystem5/CDConfig.java">
+      <file leaf-file-name="BlankDisc.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/soundsystem5/BlankDisc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#223#224#0" expanded="true" />
-                <element signature="e#262#263#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="325">
+              <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Config.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/soundsystem5/Config.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -29,10 +35,12 @@
       <file leaf-file-name="CDPlayerConfig.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/soundsystem5/CDPlayerConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+            <state relative-caret-position="190">
+              <caret line="16" column="21" lean-forward="false" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#431#432#0" expanded="true" />
+                <element signature="e#478#479#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -41,9 +49,11 @@
       <file leaf-file-name="Config.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/soundsystem5/Config.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="19" />
-              <folding />
+            <state relative-caret-position="150">
+              <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -51,8 +61,8 @@
       <file leaf-file-name="ConfigTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/soundsystem5/ConfigTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="186">
+              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -116,16 +126,17 @@
         <option value="$PROJECT_DIR$/src/soundsystem4/CDPlayer.java" />
         <option value="$PROJECT_DIR$/src/soundsystem5/CompactDisc.java" />
         <option value="$PROJECT_DIR$/src/soundsystem5/MediaPlayer.java" />
-        <option value="$PROJECT_DIR$/src/soundsystem5/BlankDisc.java" />
         <option value="$PROJECT_DIR$/src/soundsystem1/Test.java" />
         <option value="$PROJECT_DIR$/src/soundsystem5/SgtPeppers.java" />
         <option value="$PROJECT_DIR$/src/soundsystem5/Test.java" />
-        <option value="$PROJECT_DIR$/src/soundsystem5/CDPlayer.java" />
         <option value="$PROJECT_DIR$/src/soundsystem2/Test.java" />
+        <option value="$PROJECT_DIR$/src/soundsystem5/BlankDisc.java" />
         <option value="$PROJECT_DIR$/src/soundsystem5/CDConfig.java" />
-        <option value="$PROJECT_DIR$/src/soundsystem5/CDPlayerConfig.java" />
-        <option value="$PROJECT_DIR$/src/soundsystem5/Config.java" />
+        <option value="$PROJECT_DIR$/src/soundsystem5/Config.xml" />
+        <option value="$PROJECT_DIR$/src/soundsystem5/CDPlayer.java" />
         <option value="$PROJECT_DIR$/test/soundsystem5/ConfigTest.java" />
+        <option value="$PROJECT_DIR$/src/soundsystem5/Config.java" />
+        <option value="$PROJECT_DIR$/src/soundsystem5/CDPlayerConfig.java" />
       </list>
     </option>
   </component>
@@ -183,12 +194,6 @@
               <item name="soundsystem" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="soundsystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="soundsystem" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="soundsystem2" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -213,13 +218,14 @@
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="soundsystem2" />
       <recent name="soundsystem5" />
+      <recent name="soundsystem2" />
       <recent name="soundsystem4" />
       <recent name="soundsystem3" />
       <recent name="soundsystem" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Git_Project\JavaProjects\Spring\soundsystem\src\soundsystem5" />
       <recent name="D:\Git_Project\JavaProjects\Spring\soundsystem\src\soundsystem4" />
     </key>
   </component>
@@ -455,44 +461,44 @@
       <workItem from="1522375907912" duration="10141000" />
       <workItem from="1522466970571" duration="2004000" />
       <workItem from="1522546974471" duration="6872000" />
-      <workItem from="1522654985300" duration="9577000" />
+      <workItem from="1522654985300" duration="13340000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CDPlayerTest - 2018.03.30 at 09h 31m 47s.xml">
-      <configuration name="CDPlayerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CDPlayerTest - 2018.03.30 at 09h 46m 20s.xml">
-      <configuration name="CDPlayerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CDPlayerTest_(1) - 2018.03.30 at 14h 41m 30s.xml">
-      <configuration name="CDPlayerTest (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CDPlayerTest_cdShouldNotBeNull - 2018.03.30 at 09h 32m 01s.xml">
-      <configuration name="CDPlayerTest.cdShouldNotBeNull" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CDPlayerTest_cdShouldNotBeNull - 2018.03.30 at 09h 48m 51s.xml">
-      <configuration name="CDPlayerTest.cdShouldNotBeNull" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CDPlayerTest_cdShouldNotBeNull - 2018.03.30 at 09h 50m 14s.xml">
-      <configuration name="CDPlayerTest.cdShouldNotBeNull" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CDPlayerTest_cdShouldNotBeNull - 2018.03.30 at 14h 28m 51s.xml">
-      <configuration name="CDPlayerTest.cdShouldNotBeNull" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ConfigTest - 2018.04.02 at 19h 36m 20s.xml">
+    <history-entry file="ConfigTest - 2018.04.02 at 22h 40m 46s.xml">
       <configuration name="ConfigTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ConfigTest - 2018.04.02 at 19h 36m 58s.xml">
+    <history-entry file="ConfigTest - 2018.04.02 at 22h 44m 45s.xml">
       <configuration name="ConfigTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ConfigTest - 2018.04.02 at 19h 37m 11s.xml">
+    <history-entry file="ConfigTest - 2018.04.02 at 22h 45m 19s.xml">
+      <configuration name="ConfigTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConfigTest - 2018.04.02 at 22h 51m 48s.xml">
+      <configuration name="ConfigTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConfigTest - 2018.04.02 at 22h 53m 47s.xml">
+      <configuration name="ConfigTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConfigTest - 2018.04.02 at 22h 57m 14s.xml">
+      <configuration name="ConfigTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConfigTest - 2018.04.02 at 22h 57m 31s.xml">
+      <configuration name="ConfigTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConfigTest - 2018.04.02 at 22h 58m 19s.xml">
+      <configuration name="ConfigTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConfigTest - 2018.04.02 at 23h 03m 28s.xml">
+      <configuration name="ConfigTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConfigTest - 2018.04.02 at 23h 04m 38s.xml">
       <configuration name="ConfigTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46543000" />
+    <option name="totallyTimeSpent" value="50306000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
@@ -507,7 +513,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42313787" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44057053" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -539,14 +545,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/soundsystem/CDPlayerTest.java" />
-    <entry file="file://$PROJECT_DIR$/out/test/soundsystem/soundsystem/CDPlayerTest.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/soundsystem.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -697,7 +695,7 @@
         <state relative-caret-position="192">
           <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="15" selection-end-column="19" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -715,7 +713,7 @@
         <state relative-caret-position="356">
           <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -740,11 +738,11 @@
         <state relative-caret-position="100">
           <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#403#404#0" expanded="true" />
-            <element signature="e#440#441#0" expanded="true" />
-            <element signature="e#465#466#0" expanded="true" />
-            <element signature="e#499#500#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#403#404#0" expanded="false" />
+            <element signature="e#440#441#0" expanded="false" />
+            <element signature="e#465#466#0" expanded="false" />
+            <element signature="e#499#500#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -773,41 +771,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/soundsystem5/BlankDisc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/soundsystem1/CDPlayerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/soundsystem2/CDPlayerConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding>
-            <element signature="e#487#488#0" expanded="true" />
-            <element signature="e#526#527#0" expanded="true" />
-            <element signature="e#592#593#0" expanded="true" />
-            <element signature="e#640#641#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/soundsystem5/CDPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#487#488#0" expanded="false" />
+            <element signature="e#526#527#0" expanded="false" />
+            <element signature="e#592#593#0" expanded="false" />
+            <element signature="e#640#641#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -852,7 +824,7 @@
         <state relative-caret-position="200">
           <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -861,14 +833,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="33">
           <caret line="9" column="37" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/soundsystem1/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="11" column="76" lean-forward="false" selection-start-line="11" selection-start-column="76" selection-end-line="11" selection-end-column="76" />
           <folding />
         </state>
       </provider>
@@ -897,40 +861,94 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/soundsystem5/Config.java">
+    <entry file="file://$PROJECT_DIR$/src/soundsystem1/CDPlayerConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="19" />
+        <state relative-caret-position="39">
+          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/soundsystem1/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/spring-core-4.3.14.RELEASE.jar!/org/springframework/core/io/ClassPathResource.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/soundsystem5/BlankDisc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/soundsystem5/Config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/soundsystem5/CDConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        <state relative-caret-position="150">
+          <caret line="9" column="33" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#223#224#0" expanded="true" />
-            <element signature="e#262#263#0" expanded="true" />
+            <element signature="e#222#223#0" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/soundsystem5/CDPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="9" column="82" lean-forward="false" selection-start-line="9" selection-start-column="82" selection-end-line="9" selection-end-column="82" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/soundsystem5/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/soundsystem5/CDPlayerConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        <state relative-caret-position="190">
+          <caret line="16" column="21" lean-forward="false" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#431#432#0" expanded="true" />
+            <element signature="e#478#479#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/soundsystem5/ConfigTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="186">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
         </state>
       </provider>

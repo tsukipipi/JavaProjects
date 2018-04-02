@@ -8,9 +8,8 @@ public class CDPlayer implements MediaPlayer {
     private CompactDisc cd;
 
     //Autowired 注解：表明当Spring创建CDPlayer bean时会通过这个构造器来进行实例化并且传入一个CompactDisc类型的bean
-    //可以用在setter等其他方法上没有限制
     @Autowired
-    public void setCompactDisc(CompactDisc cd){
+    public CDPlayer(CompactDisc cd){
         this.cd = cd;
     }
 

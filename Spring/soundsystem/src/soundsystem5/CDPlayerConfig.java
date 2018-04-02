@@ -10,15 +10,13 @@ import org.springframework.context.annotation.Import;
  * Import 注解：导入另一个类
  */
 @Configuration
-//@Import(CDConfig.class)
+@Import(CDConfig.class)
 public class CDPlayerConfig {
 
-    //@Bean 注解也可以实现setter方法注入
     @Bean
-    public CDPlayer cdPlayer(CompactDisc compactDisc){
-        CDPlayer cdPlayer = new CDPlayer();
-        cdPlayer.setCompactDisc(compactDisc);
-        return cdPlayer;
+    //这里的参数sgtPeppers是bean的名称
+    public CDPlayer cdPlayer(CompactDisc sgtPeppers){
+        return new CDPlayer(sgtPeppers);
     }
 
 }
