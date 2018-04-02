@@ -9,9 +9,9 @@ public class Test {
     public static void main(String [] args){
 
         //声明Spring上下文，采用java配置类
-        //ApplicationContext context = new AnnotationConfigApplicationContext(CDPlayerConfig.class);
+        ApplicationContext context = new AnnotationConfigApplicationContext(CDPlayerConfig.class);
         //声明Spring应用上下文，采用xml配置
-        ApplicationContext context = new ClassPathXmlApplicationContext("\\soundsystem1\\CDPlayerConfig.xml");
+        //ApplicationContext context = new ClassPathXmlApplicationContext("\\soundsystem1\\CDPlayerConfig.xml");
         SgtPeppers cd = (SgtPeppers) context.getBean("lonelyHeartsClub");
         cd.play();
 
