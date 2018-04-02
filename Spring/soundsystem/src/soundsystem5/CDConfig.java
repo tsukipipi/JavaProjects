@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Configuration;
 public class CDConfig {
 
     @Bean
+    //bean的名称为sgtPeppers
     public CompactDisc sgtPeppers(){
         return new SgtPeppers();
     }

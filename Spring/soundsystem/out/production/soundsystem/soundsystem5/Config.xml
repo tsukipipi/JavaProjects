@@ -4,7 +4,6 @@
        xmlns:c="http://www.springframework.org/schema/c"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
 
-
     <bean id = "BlankDisc" class = "soundsystem5.BlankDisc"
           c:_0 = "Sgt. Pepper's Lonely Hearts Club Band"
           c:_1 = "The Beatles" >
