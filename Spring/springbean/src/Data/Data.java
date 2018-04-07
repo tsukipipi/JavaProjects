@@ -1,10 +1,10 @@
-package DataSource;
+package Data;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder;
-import org.springframework.jndi.JndiObjectFactoryBean;
+import javax.sql.DataSource;
 
-public class DataSource {
+public class Data {
 
     @Bean
     public DataSource dataSource(){
@@ -18,18 +18,18 @@ public class DataSource {
     }
 
     /*@Bean
-    public DataSource dataSource(){
-        // 通过 JNDI 获取 DataSource
-        // 能够让容器决定如何创建这个 DataSource 包括切换为容器管理的连接池
+    public Data dataSource(){
+        // 通过 JNDI 获取 Data
+        // 能够让容器决定如何创建这个 Data 包括切换为容器管理的连接池
         JndiObjectFactoryBean jndiObjectFactoryBean = new JndiObjectFactoryBean();
         jndiObjectFactoryBean.setJndiName("jdbc/myDS");
         jndiObjectFactoryBean.setResourceRef(true);
-        jndiObjectFactoryBean.setProxyInterface(javax.sql.DataSource.class);
-        return (DataSource) jndiObjectFactoryBean.getObject();
+        jndiObjectFactoryBean.setProxyInterface(javax.sql.Data.class);
+        return (Data) jndiObjectFactoryBean.getObject();
     }*/
 
     /*@Bean(destroyMethod = "close")
-    public DataSource dataSource(){
+    public Data dataSource(){
         // 在 QA 环境中，可以配置为Commons DBCP 连接池
         BasicDataSource dataSource = new BasicDataSource();
         dataSource.setUrl("jdbc:h2:tcp://dbserver/~/test");
