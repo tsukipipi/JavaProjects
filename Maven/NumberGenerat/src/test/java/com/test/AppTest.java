@@ -3,6 +3,7 @@ package com.test;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
+import org.junit.Assert;
 
 /**
  * Unit test for simple App.
@@ -35,4 +36,13 @@ public class AppTest
     {
         assertTrue( true );
     }
+
+    @org.junit.Test
+    public void testLengthOfTheUniqueKey() {
+
+        App obj = new App();
+        Assert.assertEquals(36, obj.generateUniqueKey().length());
+
+    }
+
 }
