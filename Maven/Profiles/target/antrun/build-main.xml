@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <project name="maven-antrun-" default="main"  >
 <target name="main">
-  <echo>Using env.prod.properties</echo>
-  <copy file="src/main/resources/env.prod.properties" tofile="D:\Git_Project\JavaProjects\Maven\Profiles\target\classes/env.properties" overwrite="true"/>
+  <echo>Using env.test.properties</echo>
+  <copy file="src/main/resources/env.test.properties" tofile="D:\Git_Project\JavaProjects\Maven\Profiles\target\classes/env.properties" overwrite="true"/>
 </target>
 </project>

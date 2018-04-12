@@ -20,6 +20,12 @@
     <profiles>
         <profile>
             <id>test</id>
+            <activation>
+                <property>
+                    <name>env</name>
+                    <value>test</value>
+                </property>
+            </activation>
             <build>
                 <plugins>
                     <plugin>
