@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cf5ec865-cef1-4a59-87f2-508ac013d076" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/NumberGenerat.iml" afterPath="$PROJECT_DIR$/NumberGenerat.iml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/target/NumberGenerat-1.jar" afterPath="$PROJECT_DIR$/target/NumberGenerat-1.jar" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/App.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.test.AppTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.test.AppTest.xml" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.test.AppTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/com.test.AppTest.txt" />
-      <change beforePath="$PROJECT_DIR$/../Profiles/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Profiles/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="cf5ec865-cef1-4a59-87f2-508ac013d076" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -95,7 +83,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="7" />
     <option name="y" value="-13" />
     <option name="width" value="1346" />
@@ -311,7 +299,7 @@
       <workItem from="1523413964961" duration="5462000" />
       <workItem from="1523497577700" duration="641000" />
       <workItem from="1523516557636" duration="211000" />
-      <workItem from="1523585949244" duration="1193000" />
+      <workItem from="1523585949244" duration="1204000" />
     </task>
     <servers />
   </component>
@@ -321,10 +309,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7507000" />
+    <option name="totallyTimeSpent" value="7518000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
