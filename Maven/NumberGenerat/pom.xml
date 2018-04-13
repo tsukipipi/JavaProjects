@@ -14,5 +14,12 @@
       <version>4.12</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>mysql-connect</groupId>
+      <artifactId>mysql-connect</artifactId>
+      <scope>system</scope>
+      <version>1.0</version>
+      <systemPath>${basedir}\src\lib\mysql-connector-java-5.1.46.jar</systemPath>
+    </dependency>
   </dependencies>
 </project>
