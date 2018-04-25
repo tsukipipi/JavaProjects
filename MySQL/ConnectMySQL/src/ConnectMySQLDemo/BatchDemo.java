@@ -26,7 +26,7 @@ public class BatchDemo {
             stmt = conn.createStatement();
             //执行sql语句
             for (int i = 0; i < 20000; i++) {
-                stmt.addBatch("insert into usertest (username,userpassword,regTime) values ('pipi','amatsuki',now())");
+                stmt.addBatch("insert into usertest (username,userpassword,currenttime) values ('pipi','amatsuki',now())");
             }
             stmt.executeBatch();
             //提交事务
@@ -52,7 +52,5 @@ public class BatchDemo {
                 e.printStackTrace();
             }
         }
-
     }
-
 }
