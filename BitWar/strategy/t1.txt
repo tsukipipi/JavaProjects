@@ -1,0 +1,3 @@
+func t1
+    return 1
+endf
