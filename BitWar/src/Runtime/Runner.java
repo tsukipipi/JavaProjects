@@ -35,11 +35,14 @@ public class Runner {
         return false;
     }
 
+    //运行某个策略  order表示策略运行的先后顺序
     public Integer run(String name, int order) throws RunningException{
         return GlobalValue.getProgram(name).run(order);
     }
 
+    //运行某一个策略(的语法树)
     public Integer run(String name) throws RunningException{
+        //GlobalValue.getProgram(name) 返回值是 program
         return GlobalValue.getProgram(name).run();
     }
 }

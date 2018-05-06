@@ -32,7 +32,6 @@ public class Cmd {
             case "run":run();break;
             //battle t1.txt t2.txt 10
             case "battle":battle();break;
-            case "exit":break;
             case "":break;
             default:throw new CmdException("'"+cmd.get(0)+"' is not a command");
         }
@@ -53,26 +52,65 @@ public class Cmd {
             else throw new CmdException("directory '"+cmd.get(1)+"' is not exist");
         }
         //目录不存在，抛出异常
-        else throw new CmdException("目录 '" + cmd.get(1) + "' 不存在");
+        else throw new CmdException("directory '" + cmd.get(1) + "' is not exist");
     }
 
+    //列出已经编译好的语法树对应的文件名
     private void list() throws CmdException{
         if(cmd.size()!=1) throw new CmdException("wrong args for ls command");
         //输出programs保存的编译好的语法树对应的文件名
         GlobalValue.printAllPrograms();
     }
 
+    //输出编译好的某一棵语法树
     private void show() throws CmdException{
-        //输出编译好的某一棵语法树
         if(cmd.size()!=2) throw new CmdException("wrong args for show command");
         Parser.printTree(cmd.get(1),GlobalValue.getProgram(cmd.get(1)));
     }
 
+    //单次运行某个策略(这个策略不包含对手的数据)
     private void run() throws CmdException, RunningException{
-
+        if(cmd.size()!=2) throw new CmdException("wrong args for run command");
+        String target = cmd.get(1);
+        //判断是否存在这颗语法树
+        if(!GlobalValue.hasProgram(target)) throw new CmdException("'"+target+"' is not loaded");
+        System.out.println("result: "+runner.run(target));
     }
 
     private void battle() throws CmdException, RunningException{
-
+        //两个策略对战
+        if(cmd.size()==4){
+            //获取两个策略和对战次数
+            String target1 = cmd.get(1);
+            String target2 = cmd.get(2);
+            String round = cmd.get(3);
+            //对战前的一些检查
+            if(!round.matches("[0-9]+"))
+                throw new CmdException("'"+round+"' is not a number over zero");
+            int round2 = Integer.parseInt(round);
+            if(round2<=0)
+                throw new CmdException("'" + round2 + "' is not a number over zero");
+            if(!GlobalValue.hasProgram(target1))
+                throw new CmdException("'" + target1 + "' is not loaded");
+            if(!GlobalValue.hasProgram(target2))
+                throw new CmdException("'" + target2 + "' is not loaded");
+            //没有异常则进行两个策略的对战
+            BattleEntry.battle(runner,target1,target2,round2,false);
+        }
+        //全部策略对战
+        else if(cmd.size()==2){
+            if(GlobalValue.getPrograms().size()<2)
+                throw new CmdException("there are no enough programs to battle");
+            String round = cmd.get(1);
+            if(!round.matches("[0-9]+"))
+                throw new CmdException("'"+round+"' is not a number over zero");
+            int round2 = Integer.parseInt(round);
+            if(round2<=0)
+                throw new CmdException("'"+round2+"' is not a number over zero");
+            //全部策略进行对战
+            BattleEntry.battle(runner,round2);
+        }
+        //格式出错
+        else throw new CmdException("wrong args for battle command");
     }
 }

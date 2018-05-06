@@ -15,6 +15,7 @@ public class StmtListTree implements Tree{
         firstStmt = null;
     }
 
+    //添加 stmt 子树
     public void addStmt(StmtTree tree){
         //设置第一棵 stmt 子树
         if(firstStmt == null) firstStmt = tree;
@@ -38,6 +39,7 @@ public class StmtListTree implements Tree{
         }
     }
 
+    //运行当前策略对应的语法树
     @Override
     public Integer run(Map<String, Integer> localVal) throws RunningException {
         return firstStmt.run(localVal);

@@ -22,7 +22,7 @@ public class TermTree implements Tree{
         mulops = new ArrayList<>();
     }
 
-    //根据单词流生长语法树的 TermTree 的子树
+    //根据单词流生长语法树的 Term 的子树
     @Override
     public void grow(TokenList tokens) throws CompileException {
         //term -> factor {mulop factor}
@@ -38,6 +38,7 @@ public class TermTree implements Tree{
         }
     }
 
+    //运行当前策略对应的语法树
     @Override
     public Integer run(Map<String, Integer> localVal) throws RunningException {
         int result = factors.get(0).run(localVal);

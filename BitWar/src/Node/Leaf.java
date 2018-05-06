@@ -22,6 +22,7 @@ public class Leaf implements Tree{
         grow(null);
     }
 
+    //获得叶子的值
     public String getValue() {
         return value;
     }
@@ -45,6 +46,7 @@ public class Leaf implements Tree{
         else if(isNum(getValue())) setCondition("num");
     }
 
+    //运行当前策略对应的语法树的叶子
     @Override
     public Integer run(Map<String, Integer> localVal) throws RunningException {
         switch (getCondition()){

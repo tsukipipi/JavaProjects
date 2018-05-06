@@ -30,6 +30,7 @@ public class RandomTree implements Tree{
     @Override
     public Integer run(Map<String, Integer> localVal) throws RunningException {
         int max = exp.run(localVal);
+        //求出一个随机值
         Random r = new Random();
         return r.nextInt(max);
     }

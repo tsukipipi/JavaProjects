@@ -8,6 +8,7 @@ import java.util.Map;
 public class GlobalValue {
     //存储编译好的语法树和对应的文件名
     private static Map<String, Program> programs = new HashMap<>();
+    //存储对战双方的历史对战结果
     private static Map<String, Object> globalVal = new HashMap<>();
 
     //将编译好的语法树和对应的文件名保存起来
@@ -15,14 +16,17 @@ public class GlobalValue {
         programs.put(name, new Program(program));
     }
 
+    //根据文件名获得对应的语法树
     public static Program getProgram(String name){
         return programs.get(name);
     }
 
+    //设置globalval
     public static void setGlobalVal(String id, Object value){
         globalVal.put(id, value);
     }
 
+    //获取globalval
     public static Object getGlobalVal(String id) {
         return globalVal.get(id);
     }
@@ -31,6 +35,7 @@ public class GlobalValue {
         return globalVal.containsKey(id);
     }
 
+    //清空globalval的值
     public static void clearGlobalVal(){
         globalVal.clear();
     }
@@ -47,6 +52,7 @@ public class GlobalValue {
         }
     }
 
+    //判断是否存在 name (文件名)以及对应的语法树
     public static boolean hasProgram(String name){
         return programs.keySet().contains(name);
     }

@@ -28,7 +28,7 @@ public class FactorTree implements Tree{
         this.condition = condition;
     }
 
-    //根据单词流生长语法树的 FactorTree 的子树
+    //根据单词流生长语法树的 Factor 的子树
     @Override
     public void grow(TokenList tokens) throws CompileException {
         //factor -> (exp) | num | id | random | const
@@ -63,6 +63,7 @@ public class FactorTree implements Tree{
         }
     }
 
+    //运行当前策略对应的语法树
     @Override
     public Integer run(Map<String, Integer> localVal) throws RunningException {
         switch (getCondition()){

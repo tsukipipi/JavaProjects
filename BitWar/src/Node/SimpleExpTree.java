@@ -38,6 +38,7 @@ public class SimpleExpTree implements Tree{
         }
     }
 
+    //运行当前策略对应的语法树
     @Override
     public Integer run(Map<String, Integer> localVal) throws RunningException {
         int result = terms.get(0).run(localVal);

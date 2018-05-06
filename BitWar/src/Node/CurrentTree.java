@@ -20,23 +20,36 @@ public class CurrentTree implements Tree{
             throw new CompileException("current format error");
     }
 
+    //运行当前策略对应的语法树
     @Override
     public Integer run(Map<String, Integer> localVal) throws RunningException {
         int current = localVal.get("current");
         int order = localVal.get("my");
-        if (order==Program.FIRST_RUN){
-            if (current==Program.MY_CURRENT){
+        //FIRST_RUN = 1
+        //自己的回合
+        if (order == Program.FIRST_RUN){
+            //MY_CURRENT = 1
+            //在自己的回合取得自己对战过的回合数
+            if (current == Program.MY_CURRENT){
                 return ((List)GlobalValue.getGlobalVal("history1")).size();
             }
-            if (current==Program.OPPONENT_CURRENT){
+            //OPPONENT_CURRENT = 2
+            //在自己的回合取得对手对战过的回合数
+            if (current == Program.OPPONENT_CURRENT){
                 return ((List)GlobalValue.getGlobalVal("history2")).size();
             }
             throw new RunningException("current val is invaild");
         }
-        if (order==Program.SECOND_RUN){
-            if (current==Program.MY_CURRENT){
+        //SECOND_RUN = 2
+        //对手的回合
+        if (order == Program.SECOND_RUN){
+            //MY_CURRENT = 1
+            //在对手的回合获取对手自身对战过的回合数
+            if (current == Program.MY_CURRENT){
                 return ((List)GlobalValue.getGlobalVal("history2")).size();
             }
+            //OPPONENT_CURRENT = 2
+            //在对手的回合获取我方对战过的回合数
             if (current==Program.OPPONENT_CURRENT){
                 return ((List)GlobalValue.getGlobalVal("history1")).size();
             }

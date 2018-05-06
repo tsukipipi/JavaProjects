@@ -55,10 +55,10 @@ public class IfTree implements Tree{
             throw new CompileException("if-stmt is not finished by endi");
     }
 
+    //运行当前策略对应的语法树
     @Override
     public Integer run(Map<String, Integer> localVal) throws RunningException {
         if(ifPart.run(localVal)!=0){
-
             return thenPart.run(localVal);
         }
         else if(getCondition().equals("else")){

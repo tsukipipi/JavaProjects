@@ -30,6 +30,7 @@ public class ProgramTree  implements Tree {
         if(!tokens.read().equals("endf")) throw new CompileException("function is not finished by 'endf'");
     }
 
+    //运行当前策略对应的语法树
     @Override
     public Integer run(Map<String, Integer> localVal) throws RunningException {
         return stmtList.run(localVal);

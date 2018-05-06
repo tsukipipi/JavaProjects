@@ -35,6 +35,7 @@ public class StmtTree implements Tree{
         return nextStmt != null;
     }
 
+    //设置指向下一棵stmt
     public void setNextStmt(StmtTree nextStmt) {
         this.nextStmt = nextStmt;
     }
@@ -70,17 +71,18 @@ public class StmtTree implements Tree{
         }
     }
 
+    //运行当前策略对应的语法树
     @Override
     public Integer run(Map<String, Integer> localVal) throws RunningException {
         Integer val = null;
         switch (getCondition()){
             case "if":
                 val = ifTree.run(localVal);
-                if(val==null) return hasNext()?nextStmt.run(localVal):null;
+                if(val == null) return hasNext()?nextStmt.run(localVal):null;
                 else return val;
             case "while":
                 val = whileTree.run(localVal);
-                if(val==null) return hasNext()?nextStmt.run(localVal):null;
+                if(val == null) return hasNext()?nextStmt.run(localVal):null;
                 else return val;
             case "assign":
                 assignTree.run(localVal);

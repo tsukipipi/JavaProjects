@@ -22,6 +22,7 @@ public class ReturnTree implements Tree{
         exp.grow(tokens);
     }
 
+    //运行当前策略对应的语法树
     @Override
     public Integer run(Map<String, Integer> localVal) throws RunningException {
         return exp.run(localVal);

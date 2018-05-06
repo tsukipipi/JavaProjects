@@ -10,6 +10,7 @@ import java.util.Map;
 
 @SuppressWarnings("all")
 public class OpponentTree implements Tree{
+    //opponent(exp)
     private ExpTree exp;
 
     public OpponentTree(){}
@@ -28,21 +29,29 @@ public class OpponentTree implements Tree{
             throw new CompileException("opponent format error");
     }
 
+    //运行当前策略对应的语法树
     @Override
     public Integer run(Map<String, Integer> localVal) throws RunningException {
+        //OPPONENT_CURRENT = 2
+        //更新 current 的值
         localVal.put("current", Program.OPPONENT_CURRENT);
         int arg = exp.run(localVal);
         int index = localVal.get("my");
-        if(index==Program.FIRST_RUN){
+        //FIRST_RUN = 1
+        //自己的回合
+        if(index == Program.FIRST_RUN){
+            //arg = 0 获取对手的对战轮数
             if (arg == 0) return ((List) GlobalValue.getGlobalVal("history2")).size();
-            if (arg<0 || arg >= ((List) GlobalValue.getGlobalVal("history2")).size()){
+            if (arg < 0 || arg >= ((List) GlobalValue.getGlobalVal("history2")).size()){
                 throw new RunningException("current index out of array 'history2'");
             }
             return (Integer) ((List) GlobalValue.getGlobalVal("history2")).get(arg);
         }
-        if(index==Program.SECOND_RUN){
+        //SECOND_RUN = 2
+        //对手的回合
+        if(index == Program.SECOND_RUN){
             if (arg == 0) return ((List) GlobalValue.getGlobalVal("history1")).size();
-            if (arg<0 || arg >= ((List) GlobalValue.getGlobalVal("history1")).size()){
+            if (arg < 0 || arg >= ((List) GlobalValue.getGlobalVal("history1")).size()){
                 throw new RunningException("current index out of array 'history1'");
             }
             return (Integer) ((List) GlobalValue.getGlobalVal("history1")).get(arg);
