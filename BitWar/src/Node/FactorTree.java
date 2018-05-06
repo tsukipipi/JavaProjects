@@ -15,6 +15,7 @@ public class FactorTree implements Tree{
     private Leaf value;
     private RandomTree random;
     private ConstTree con;
+    //记录是哪一种情况的子树
     private String condition;
 
     public FactorTree(){}
@@ -27,8 +28,11 @@ public class FactorTree implements Tree{
         this.condition = condition;
     }
 
+    //根据单词流生长语法树的 FactorTree 的子树
     @Override
     public void grow(TokenList tokens) throws CompileException {
+        //factor -> (exp) | num | id | random | const
+        //(exp)
         if(tokens.watch().equals("(")){
             setCondition("exp");
             tokens.read();
@@ -37,15 +41,18 @@ public class FactorTree implements Tree{
             if(!tokens.read().equals(")"))
                 throw new CompileException("factor format error");
         }
+        // Id 或者 Num
         else if(isId(tokens.watch())||isNum(tokens.watch())){
             setCondition("value");
             value = new Leaf(tokens.read());
         }
+        //random
         else if (tokens.watch().equals("random")){
             setCondition("random");
             random = new RandomTree();
             random.grow(tokens);
         }
+        //const
         else if (isConst(tokens.watch())){
             setCondition("const");
             con = new ConstTree();
@@ -68,6 +75,7 @@ public class FactorTree implements Tree{
         }
     }
 
+    //输出语法树 Factor 子树的单词流
     @Override
     public void print(int deep) {
         switch (getCondition()){

@@ -14,8 +14,10 @@ public class OpponentTree implements Tree{
 
     public OpponentTree(){}
 
+    //根据单词流生长语法树的 OpponentTree 的子树
     @Override
     public void grow(TokenList tokens) throws CompileException {
+        //opponent -> opponent(exp)
         if(!tokens.read().equals("opponent"))
             throw new CompileException("opponent is not started with 'random'");
         if(!tokens.read().equals("("))
@@ -50,10 +52,12 @@ public class OpponentTree implements Tree{
         }
     }
 
+    //输出语法树 Opponent 子树的单词流
     @Override
     public void print(int deep) {
         Parser.printWord(deep,"opponent");
         exp.print(deep+1);
+        //表示 opponent 部分的结束
         Parser.printWord(deep,"-opponent");
     }
 }

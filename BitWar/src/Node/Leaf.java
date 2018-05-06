@@ -11,6 +11,7 @@ import static Compiler.TokenJudge.isNum;
 
 @SuppressWarnings("all")
 public class Leaf implements Tree{
+    //叶子上的值
     private String value;
     private String condition;
 
@@ -37,6 +38,7 @@ public class Leaf implements Tree{
         this.condition = condition;
     }
 
+    //根据单词流来确定叶子的值是 id 或者 num
     @Override
     public void grow(TokenList tokens) throws CompileException {
         if(isId(getValue())) setCondition("id");
@@ -55,6 +57,7 @@ public class Leaf implements Tree{
         }
     }
 
+    //输出语法树 Leaf 上的单词
     @Override
     public void print(int deep) {
         Parser.printWord(deep,getValue());

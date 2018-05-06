@@ -2,6 +2,7 @@ package Compiler;
 
 import Exception.*;
 import Node.*;
+import Runtime.*;
 import java.io.File;
 import static Compiler.Tokenizer.getTokens;
 
@@ -33,15 +34,19 @@ public class Parser {
         return programTree;
     }
 
+    //输出语法树上的单词
     public static void printWord(int deep, String word) {
-        for(int i=0;i<deep;i++) System.out.print("\t");
+        //根据层数来确定缩进
+        for(int i = 0; i < deep; i++)
+            System.out.print("\t");
         System.out.println(word);
     }
 
-    public static void printTree(String name, Runtime.Program program){
-        System.out.println("----------- "+name+" ----------");
+    //输出语法树
+    public static void printTree(String name, Program program){
+        System.out.println("------- " + name + " -------");
         program.printTree();
-        System.out.println("---------- end ----------");
+        System.out.println("------- end -------");
     }
 
 }

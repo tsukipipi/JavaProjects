@@ -6,11 +6,11 @@ import java.util.Map;
 
 @SuppressWarnings("all")
 public class GlobalValue {
-
+    //存储编译好的语法树和对应的文件名
     private static Map<String, Program> programs = new HashMap<>();
     private static Map<String, Object> globalVal = new HashMap<>();
 
-    //将语法树和对应的文件名保存起来
+    //将编译好的语法树和对应的文件名保存起来
     public static void inputProgram(String name, ProgramTree program){
         programs.put(name, new Program(program));
     }
@@ -39,6 +39,7 @@ public class GlobalValue {
         return programs;
     }
 
+    //输出programs保存的语法树对应的文件名
     public static void printAllPrograms(){
         if(programs.size()==0) System.out.println("no programs here");
         for(String key:programs.keySet()){

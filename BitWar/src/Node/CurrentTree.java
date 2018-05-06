@@ -13,6 +13,7 @@ import java.util.Map;
 public class CurrentTree implements Tree{
     public CurrentTree(){}
 
+    //根据单词流生长语法树的 CurrentTree 的子树
     @Override
     public void grow(TokenList tokens) throws CompileException {
         if(!tokens.read().equals("current"))
@@ -46,6 +47,7 @@ public class CurrentTree implements Tree{
         }
     }
 
+    //输出语法树的单词Current
     @Override
     public void print(int deep) {
         Parser.printWord(deep,"current");

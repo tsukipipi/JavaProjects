@@ -1,7 +1,5 @@
 package Entry;
 
-import Entry.Cmd;
-
 import java.util.Scanner;
 
 public class Main {
@@ -13,11 +11,10 @@ public class Main {
         System.out.println("|             欢迎来到比特大战             |");
         System.out.println("|                                          |");
         System.out.println("============================================");
-
         Scanner scanner = new Scanner(System.in);
         while (true) {
             System.out.println("============================================");
-            System.out.println("|load:读入策略 |");
+            System.out.println("|load: load or load file|");
             System.out.println("|list:|");
             System.out.println("|show:|");
             System.out.println("|run:|");

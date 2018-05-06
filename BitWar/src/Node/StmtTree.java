@@ -13,7 +13,9 @@ public class StmtTree implements Tree{
     private WhileTree whileTree;
     private AssignTree assignTree;
     private ReturnTree returnTree;
+    //指向下一棵 stmt 子树
     private StmtTree nextStmt;
+    //condition 区分为 if、while、return、assign、null
     private String condition;
 
     public StmtTree(){
@@ -28,6 +30,7 @@ public class StmtTree implements Tree{
         this.condition = condition;
     }
 
+    //判断是否还有下一棵stmt子树（是否到达链尾）
     public boolean hasNext(){
         return nextStmt != null;
     }
@@ -36,8 +39,11 @@ public class StmtTree implements Tree{
         this.nextStmt = nextStmt;
     }
 
+    //根据单词流生长语法树的 StmtTree 的子树: if、while、return、assign
     @Override
     public void grow(TokenList tokens) throws CompileException {
+        //stmt -> if-stmt | while-stmt | assign-stmt | return-stmt
+        //watch()查看下一个单词
         String token = tokens.watch();
         if(token.equals("if")){
             ifTree = new IfTree();
@@ -85,8 +91,10 @@ public class StmtTree implements Tree{
         }
     }
 
+    //输出stmt子树链表的单词流
     @Override
     public void print(int deep) {
+        //根据生长语法树(grow)时设置的condition来判断是哪一种情况
         switch (getCondition()){
             case "if": ifTree.print(deep);break;
             case "while": whileTree.print(deep);break;
@@ -94,6 +102,7 @@ public class StmtTree implements Tree{
             case "return": returnTree.print(deep);break;
             default:;
         }
+        //输出下一棵stmt子树的单词流
         if(hasNext()) nextStmt.print(deep);
     }
 }

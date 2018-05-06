@@ -11,7 +11,7 @@ public class Runner {
     //根据路径载入策略文件
     public boolean load(String path) throws CompileException{
         File dir = new File(path);
-        //判断路径是否存在以及是否为一个目录
+        //判断路径是否存在以及是否为一个目录，载入目录下的全部文件
         if (dir.exists() && dir.isDirectory()){
             //获取当前文件夹下的所有文件和文件夹
             File []files = dir.listFiles();
@@ -19,13 +19,19 @@ public class Runner {
                 //找出以 .txt 结尾的文件（策略文件）
                 if (file.getName().endsWith(".txt")){
                     //inputProgram() 将生成的语法树和对应的文件名存储到GlobalValue中
-                    //Parser.parse(file.getPath()) 根据文件路径读取文件内容拆分成单词再生成语法树
+                    //Parser.parse(file.getPath()) 根据文件路径读取文件内容拆分成单词生成语法树，返回生成的语法树
                     GlobalValue.inputProgram(file.getName(), Parser.parse(file.getPath()));
                 }
             }
             return true;
         }
-
+        //载入单个文件
+        else if (dir.exists()){
+            if (dir.getName().endsWith(".txt")){
+                GlobalValue.inputProgram(dir.getName(), Parser.parse(dir.getPath()));
+            }
+            return true;
+        }
         return false;
     }
 

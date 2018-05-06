@@ -24,10 +24,13 @@ public class ExpTree implements Tree{
         this.condition = condition;
     }
 
+    //根据单词流生长语法树的 ExpTree 的子树
     @Override
     public void grow(TokenList tokens) throws CompileException {
+        //exp -> logic-exp [logic logic-exp]
         left = new LogicExpTree();
         left.grow(tokens);
+        //还有逻辑判断部分 and、or
         if(isLogic(tokens.watch())) {
             logic = new Leaf(tokens.read());
             setCondition("hasLogic");
@@ -53,9 +56,11 @@ public class ExpTree implements Tree{
         }
     }
 
+    //输出语法树 exp 子树的单词流
     @Override
     public void print(int deep) {
         left.print(deep);
+        //存在右侧的逻辑部分
         if(getCondition().equals("hasLogic")){
             logic.print(deep);
             right.print(deep);

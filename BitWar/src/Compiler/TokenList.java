@@ -30,6 +30,7 @@ public class TokenList {
         return overflow()?null:tokens.get(tokenIndex++);
     }
 
+    //查看下一个单词
     public String watch(){
         return overflow()?null:tokens.get(tokenIndex);
     }

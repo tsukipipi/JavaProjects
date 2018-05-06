@@ -33,6 +33,7 @@ public class Program {
         return run(SINGLE_RUN);
     }
 
+    //输出语法树
     public void printTree(){
         programTree.print(0);
     }

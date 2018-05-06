@@ -9,9 +9,13 @@ import static Compiler.TokenJudge.isComp;
 
 @SuppressWarnings("all")
 public class LogicExpTree implements Tree{
+    //逻辑表达式左边部分
     private SimpleExpTree left;
+    //逻辑符号
     private Leaf comp;
+    //逻辑表达式右边部分
     private SimpleExpTree right;
+    //记录是否存在逻辑符号及右边部分
     private String condition;
 
     public LogicExpTree(){}
@@ -24,13 +28,18 @@ public class LogicExpTree implements Tree{
         this.condition = condition;
     }
 
+    //根据单词流生长语法树的 LogicExpTree 的子树
     @Override
     public void grow(TokenList tokens) throws CompileException {
+        //logic-exp -> simple-exp [comp simple-exp]
+        //逻辑表达式左边部分
         left = new SimpleExpTree();
         left.grow(tokens);
+        //判断是否存在逻辑判断符号
         if(isComp(tokens.watch())){
             comp = new Leaf(tokens.read());
             setCondition("hasComp");
+            //逻辑表达式右边部分
             right = new SimpleExpTree();
             right.grow(tokens);
         }
@@ -62,6 +71,7 @@ public class LogicExpTree implements Tree{
         else throw new RunningException("logic-exp grammar error");
     }
 
+    //输出语法树 LogicExp 子树的单词流
     @Override
     public void print(int deep) {
         left.print(deep);

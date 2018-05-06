@@ -13,8 +13,10 @@ public class RandomTree implements Tree{
 
     public RandomTree(){}
 
+    //根据单词流生长语法树的 RandomTree 的子树
     @Override
     public void grow(TokenList tokens) throws CompileException {
+        //random -> random(exp)
         if(!tokens.read().equals("random"))
             throw new CompileException("random-stat is not started with 'random'");
         if(!tokens.read().equals("("))
@@ -32,10 +34,12 @@ public class RandomTree implements Tree{
         return r.nextInt(max);
     }
 
+    //输出语法树 Random 子树的单词流
     @Override
     public void print(int deep) {
         Parser.printWord(deep,"random");
         exp.print(deep+1);
+        //表示 random 部分的结束
         Parser.printWord(deep,"-random");
     }
 }

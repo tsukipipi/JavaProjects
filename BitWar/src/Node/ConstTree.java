@@ -22,18 +22,23 @@ public class ConstTree implements Tree{
         this.condition = condition;
     }
 
+    //根据单词流生长语法树的 ConstTree 的子树
     @Override
     public void grow(TokenList tokens) throws CompileException {
+        //const -> current | my | opponent
+        //current
         if(tokens.watch().equals("current")){
             setCondition("current");
             current = new CurrentTree();
             current.grow(tokens);
         }
+        //my
         else if(tokens.watch().equals("my")){
             setCondition("my");
             my = new MyTree();
             my.grow(tokens);
         }
+        //opponent
         else if(tokens.watch().equals("opponent")){
             setCondition("opponent");
             opponent = new OpponentTree();
@@ -52,6 +57,7 @@ public class ConstTree implements Tree{
         else throw new RunningException("const grammar error");
     }
 
+    //输出语法树 Const 子树的单词流
     @Override
     public void print(int deep) {
         if(getCondition().equals("current")) current.print(deep);

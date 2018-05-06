@@ -12,7 +12,9 @@ import static Compiler.TokenJudge.isAddop;
 
 @SuppressWarnings("all")
 public class SimpleExpTree implements Tree{
+    //保存由 + - 符号连接的表达式子树
     private List<TermTree> terms;
+    //保存表达式的 + - 符号
     private List<String> addops;
 
     public SimpleExpTree(){
@@ -20,11 +22,14 @@ public class SimpleExpTree implements Tree{
         addops = new ArrayList<>();
     }
 
+    //根据单词流生长语法树的 SimpleExpTree 的子树
     @Override
     public void grow(TokenList tokens) throws CompileException {
+        //simple-exp -> term {addop term}
         TermTree tree = new TermTree();
         tree.grow(tokens);
         terms.add(tree);
+        //表达式存在 + - 符号
         while (isAddop(tokens.watch())){
             addops.add(tokens.read());
             tree = new TermTree();
@@ -46,6 +51,7 @@ public class SimpleExpTree implements Tree{
         return result;
     }
 
+    //输出语法树 SimpleExp 子树的单词流
     @Override
     public void print(int deep) {
         terms.get(0).print(deep);

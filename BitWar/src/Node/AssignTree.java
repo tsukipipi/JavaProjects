@@ -15,8 +15,10 @@ public class AssignTree implements Tree{
 
     public AssignTree(){}
 
+    //根据单词流生长语法树的 AssignTree 的子树
     @Override
     public void grow(TokenList tokens) throws CompileException {
+        //assign-stmt -> id is exp
         if(isId(tokens.watch())) id = new Leaf(tokens.read());
         else throw new CompileException("assign-stmt is not started with id");
         if(!tokens.read().equals("is"))
@@ -32,6 +34,7 @@ public class AssignTree implements Tree{
         return null;
     }
 
+    //输出语法树 Assign 子树的单词流
     @Override
     public void print(int deep) {
         id.print(deep);

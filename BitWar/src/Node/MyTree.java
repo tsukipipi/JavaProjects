@@ -14,8 +14,10 @@ public class MyTree implements Tree{
 
     public MyTree(){}
 
+    //根据单词流生长语法树的 MyTree 的子树
     @Override
     public void grow(TokenList tokens) throws CompileException {
+        //my -> my(exp)
         if(!tokens.read().equals("my"))
             throw new CompileException("my-stat is not started with 'my'");
         if(!tokens.read().equals("("))
@@ -50,10 +52,12 @@ public class MyTree implements Tree{
         }
     }
 
+    //输出语法树 My 子树的单词流
     @Override
     public void print(int deep) {
         Parser.printWord(deep,"my");
         exp.print(deep+1);
+        //表示 my 部分的结束
         Parser.printWord(deep,"-my");
     }
 }

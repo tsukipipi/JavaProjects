@@ -12,7 +12,9 @@ import static Compiler.TokenJudge.isMulop;
 
 @SuppressWarnings("all")
 public class TermTree implements Tree{
+    //保存由 * / 符号连接的表达式子树
     private List<FactorTree> factors;
+    //保存表达式的 * / 符号
     private List<String> mulops;
 
     public TermTree(){
@@ -20,11 +22,14 @@ public class TermTree implements Tree{
         mulops = new ArrayList<>();
     }
 
+    //根据单词流生长语法树的 TermTree 的子树
     @Override
     public void grow(TokenList tokens) throws CompileException {
+        //term -> factor {mulop factor}
         FactorTree tree = new FactorTree();
         tree.grow(tokens);
         factors.add(tree);
+        //判断表达式是否有 * / 符号
         while (isMulop(tokens.watch())){
             mulops.add(tokens.read());
             tree = new FactorTree();
@@ -49,6 +54,7 @@ public class TermTree implements Tree{
         return result;
     }
 
+    //输出语法树 Term 子树的单词流
     @Override
     public void print(int deep) {
         factors.get(0).print(deep);
