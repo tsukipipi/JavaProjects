@@ -2,7 +2,6 @@ package Node;
 
 import Exception.*;
 import Compiler.TokenList;
-
 import java.util.Map;
 
 import static Compiler.TokenJudge.isComp;

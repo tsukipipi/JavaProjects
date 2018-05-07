@@ -38,9 +38,9 @@ public class OpponentTree implements Tree{
         int arg = exp.run(localVal);
         int index = localVal.get("my");
         //FIRST_RUN = 1
-        //自己的回合
+        //玩家1的回合
         if(index == Program.FIRST_RUN){
-            //arg = 0 获取对手的对战轮数
+            //arg = 0 获取玩家2的对战轮数
             if (arg == 0) return ((List) GlobalValue.getGlobalVal("history2")).size();
             if (arg < 0 || arg >= ((List) GlobalValue.getGlobalVal("history2")).size()){
                 throw new RunningException("current index out of array 'history2'");
@@ -48,8 +48,9 @@ public class OpponentTree implements Tree{
             return (Integer) ((List) GlobalValue.getGlobalVal("history2")).get(arg);
         }
         //SECOND_RUN = 2
-        //对手的回合
+        //玩家2的回合
         if(index == Program.SECOND_RUN){
+            //arg = 0 获取玩家1的对战轮数
             if (arg == 0) return ((List) GlobalValue.getGlobalVal("history1")).size();
             if (arg < 0 || arg >= ((List) GlobalValue.getGlobalVal("history1")).size()){
                 throw new RunningException("current index out of array 'history1'");

@@ -15,8 +15,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Entry/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="22" column="45" lean-forward="true" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+            <state relative-caret-position="150">
+              <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -48,19 +48,12 @@
         <option value="$PROJECT_DIR$/src/Compiler/TokenList.java" />
         <option value="$PROJECT_DIR$/src/Compiler/Parser.java" />
         <option value="$PROJECT_DIR$/src/Runtime/Runner.java" />
-        <option value="$PROJECT_DIR$/src/Node/ProgramTree.java" />
         <option value="$PROJECT_DIR$/src/Node/StmtListTree.java" />
-        <option value="$PROJECT_DIR$/src/Node/StmtTree.java" />
         <option value="$PROJECT_DIR$/src/Node/IfTree.java" />
-        <option value="$PROJECT_DIR$/src/Node/ExpTree.java" />
-        <option value="$PROJECT_DIR$/src/Node/LogicExpTree.java" />
         <option value="$PROJECT_DIR$/src/Node/SimpleExpTree.java" />
         <option value="$PROJECT_DIR$/src/Node/TermTree.java" />
         <option value="$PROJECT_DIR$/src/Node/ConstTree.java" />
         <option value="$PROJECT_DIR$/src/Node/ReturnTree.java" />
-        <option value="$PROJECT_DIR$/src/Node/CurrentTree.java" />
-        <option value="$PROJECT_DIR$/src/Node/OpponentTree.java" />
-        <option value="$PROJECT_DIR$/src/Runtime/Program.java" />
         <option value="$PROJECT_DIR$/src/Entry/BattleEntry.java" />
         <option value="$PROJECT_DIR$/src/Runtime/GlobalValue.java" />
         <option value="$PROJECT_DIR$/src/Node/AssignTree.java" />
@@ -71,10 +64,17 @@
         <option value="$PROJECT_DIR$/src/Node/FactorTree.java" />
         <option value="$PROJECT_DIR$/src/Compiler/Tokenizer.java" />
         <option value="$PROJECT_DIR$/src/Entry/Cmd.java" />
-        <option value="$PROJECT_DIR$/src/Entry/Main.java" />
         <option value="$PROJECT_DIR$/src/Exception/CmdException.java" />
         <option value="$PROJECT_DIR$/src/Node/MyTree.java" />
         <option value="$PROJECT_DIR$/src/Node/Tree.java" />
+        <option value="$PROJECT_DIR$/src/Node/LogicExpTree.java" />
+        <option value="$PROJECT_DIR$/src/Node/ExpTree.java" />
+        <option value="$PROJECT_DIR$/src/Node/StmtTree.java" />
+        <option value="$PROJECT_DIR$/src/Node/ProgramTree.java" />
+        <option value="$PROJECT_DIR$/src/Node/CurrentTree.java" />
+        <option value="$PROJECT_DIR$/src/Node/OpponentTree.java" />
+        <option value="$PROJECT_DIR$/src/Runtime/Program.java" />
+        <option value="$PROJECT_DIR$/src/Entry/Main.java" />
       </list>
     </option>
   </component>
@@ -84,8 +84,8 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-1329" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
@@ -105,6 +105,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -112,31 +113,13 @@
               <item name="BitWar" type="b2602c69:ProjectViewProjectNode" />
               <item name="BitWar" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="BitWar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BitWar" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BitWar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BitWar" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Entry" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BitWar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BitWar" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Node" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -278,15 +261,16 @@
       <workItem from="1524897191553" duration="635000" />
       <workItem from="1524987169098" duration="1098000" />
       <workItem from="1525333532657" duration="50567000" />
-      <workItem from="1525655638993" duration="6457000" />
+      <workItem from="1525655638993" duration="8549000" />
+      <workItem from="1525680428843" duration="8895000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59510000" />
+    <option name="totallyTimeSpent" value="70497000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-1608" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -298,11 +282,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6694079" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6689189" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14977308" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1503856" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -326,17 +310,27 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Entry/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Runtime/Program.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#112#136#0" expanded="true" />
+            <element signature="method#Program#0;class#Program#0" expanded="false" />
+            <element signature="method#run#0;class#Program#0" expanded="false" />
+            <element signature="method#run#1;class#Program#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -354,34 +348,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="10" column="46" lean-forward="false" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
-          <folding>
-            <element signature="method#readFile#0;class#Filer#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Compiler/Parser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="12" column="72" lean-forward="false" selection-start-line="12" selection-start-column="72" selection-end-line="12" selection-end-column="72" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#parse#0;class#Parser#0" expanded="false" />
-            <element signature="method#parse#1;class#Parser#0" expanded="false" />
-            <element signature="method#printWord#0;class#Parser#0" expanded="false" />
-            <element signature="method#printTree#0;class#Parser#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Compiler/Tokenizer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="37" column="11" lean-forward="false" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
-          <folding>
-            <element signature="method#getTokens#0;class#Tokenizer#0" expanded="false" />
-            <element signature="method#showTokens#0;class#Tokenizer#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -396,14 +362,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Compiler/TokenList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Entry/BattleEntry.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="233">
@@ -412,96 +370,6 @@
             <element signature="imports" expanded="true" />
             <element signature="method#battle#0;class#BattleEntry#0" expanded="false" />
             <element signature="method#battle#1;class#BattleEntry#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entry/Cmd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="116" column="1" lean-forward="true" selection-start-line="116" selection-start-column="1" selection-end-line="116" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="initializer##0;class#Cmd#0" expanded="false" />
-            <element signature="method#Cmd#0;class#Cmd#0" expanded="false" />
-            <element signature="method#load#0;class#Cmd#0" expanded="false" />
-            <element signature="method#list#0;class#Cmd#0" expanded="false" />
-            <element signature="method#show#0;class#Cmd#0" expanded="false" />
-            <element signature="method#run#0;class#Cmd#0" expanded="false" />
-            <element signature="method#battle#0;class#Cmd#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Exception/CompileException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Exception/RunningException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Exception/CmdException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Node/ConstTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="51" column="18" lean-forward="false" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
-          <folding>
-            <element signature="method#grow#0;class#ConstTree#0" expanded="false" />
-            <element signature="method#run#0;class#ConstTree#0" expanded="false" />
-            <element signature="method#print#0;class#ConstTree#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Node/AssignTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding>
-            <element signature="method#grow#0;class#AssignTree#0" expanded="false" />
-            <element signature="method#run#0;class#AssignTree#0" expanded="false" />
-            <element signature="method#print#0;class#AssignTree#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Node/CurrentTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="24" column="78" lean-forward="false" selection-start-line="24" selection-start-column="78" selection-end-line="24" selection-end-column="78" />
-          <folding>
-            <element signature="method#grow#0;class#CurrentTree#0" expanded="false" />
-            <element signature="method#run#0;class#CurrentTree#0" expanded="false" />
-            <element signature="e#1989#1990#0" expanded="true" />
-            <element signature="e#2037#2038#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Node/ExpTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="44" column="78" lean-forward="false" selection-start-line="44" selection-start-column="78" selection-end-line="44" selection-end-column="78" />
-          <folding>
-            <element signature="method#grow#0;class#ExpTree#0" expanded="false" />
-            <element signature="method#run#0;class#ExpTree#0" expanded="false" />
-            <element signature="method#print#0;class#ExpTree#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -518,18 +386,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Node/IfTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="59" column="78" lean-forward="false" selection-start-line="59" selection-start-column="78" selection-end-line="59" selection-end-column="78" />
-          <folding>
-            <element signature="method#grow#0;class#IfTree#0" expanded="false" />
-            <element signature="method#run#0;class#IfTree#0" expanded="false" />
-            <element signature="method#print#0;class#IfTree#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Node/Leaf.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="800">
@@ -537,18 +393,6 @@
           <folding>
             <element signature="method#grow#0;class#Leaf#0" expanded="false" />
             <element signature="method#run#0;class#Leaf#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Node/LogicExpTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="50" column="78" lean-forward="false" selection-start-line="50" selection-start-column="78" selection-end-line="50" selection-end-column="78" />
-          <folding>
-            <element signature="method#grow#0;class#LogicExpTree#0" expanded="false" />
-            <element signature="method#run#0;class#LogicExpTree#0" expanded="false" />
-            <element signature="method#print#0;class#LogicExpTree#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -564,27 +408,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Node/ProgramTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="32" column="18" lean-forward="true" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
-          <folding>
-            <element signature="method#grow#0;class#ProgramTree#0" expanded="false" />
-            <element signature="method#run#0;class#ProgramTree#0" expanded="false" />
-            <element signature="method#print#0;class#ProgramTree#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Node/RandomTree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
           <caret line="29" column="18" lean-forward="false" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
-          <folding>
-            <element signature="method#grow#0;class#RandomTree#0" expanded="false" />
-            <element signature="method#run#0;class#RandomTree#0" expanded="false" />
-            <element signature="method#print#0;class#RandomTree#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -592,48 +419,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="24" column="18" lean-forward="false" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-          <folding>
-            <element signature="method#grow#0;class#ReturnTree#0" expanded="false" />
-            <element signature="method#run#0;class#ReturnTree#0" expanded="false" />
-            <element signature="method#print#0;class#ReturnTree#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Node/SimpleExpTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="40" column="18" lean-forward="true" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
-          <folding>
-            <element signature="method#SimpleExpTree#0;class#SimpleExpTree#0" expanded="false" />
-            <element signature="method#grow#0;class#SimpleExpTree#0" expanded="false" />
-            <element signature="method#run#0;class#SimpleExpTree#0" expanded="false" />
-            <element signature="method#print#0;class#SimpleExpTree#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Node/StmtListTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="43" column="78" lean-forward="false" selection-start-line="43" selection-start-column="78" selection-end-line="43" selection-end-column="78" />
-          <folding>
-            <element signature="method#addStmt#0;class#StmtListTree#0" expanded="false" />
-            <element signature="method#grow#0;class#StmtListTree#0" expanded="false" />
-            <element signature="method#run#0;class#StmtListTree#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Node/StmtTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-          <folding>
-            <element signature="method#grow#0;class#StmtTree#0" expanded="false" />
-            <element signature="method#run#0;class#StmtTree#0" expanded="false" />
-            <element signature="method#print#0;class#StmtTree#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -641,43 +426,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="46" column="57" lean-forward="true" selection-start-line="46" selection-start-column="57" selection-end-line="46" selection-end-column="57" />
-          <folding>
-            <element signature="method#TermTree#0;class#TermTree#0" expanded="false" />
-            <element signature="method#grow#0;class#TermTree#0" expanded="false" />
-            <element signature="method#print#0;class#TermTree#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Node/Tree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Node/WhileTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="30" column="41" lean-forward="true" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
-          <folding>
-            <element signature="method#grow#0;class#WhileTree#0" expanded="false" />
-            <element signature="method#run#0;class#WhileTree#0" expanded="false" />
-            <element signature="method#print#0;class#WhileTree#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Runtime/Program.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding>
-            <element signature="method#Program#0;class#Program#0" expanded="false" />
-            <element signature="method#run#0;class#Program#0" expanded="false" />
-            <element signature="method#run#1;class#Program#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -691,9 +439,179 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Node/LogicExpTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="method#grow#0;class#LogicExpTree#0" expanded="false" />
+            <element signature="method#run#0;class#LogicExpTree#0" expanded="false" />
+            <element signature="method#print#0;class#LogicExpTree#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Node/SimpleExpTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-100">
+          <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Node/ExpTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-417">
+          <caret line="15" column="29" lean-forward="false" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+          <folding>
+            <element signature="method#run#0;class#ExpTree#0" expanded="false" />
+            <element signature="method#print#0;class#ExpTree#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Compiler/TokenList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Compiler/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="72" lean-forward="false" selection-start-line="12" selection-start-column="72" selection-end-line="12" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#parse#0;class#Parser#0" expanded="false" />
+            <element signature="method#parse#1;class#Parser#0" expanded="false" />
+            <element signature="method#printWord#0;class#Parser#0" expanded="false" />
+            <element signature="method#printTree#0;class#Parser#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Compiler/Tokenizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="12" column="74" lean-forward="false" selection-start-line="12" selection-start-column="74" selection-end-line="12" selection-end-column="74" />
+          <folding>
+            <element signature="method#getTokens#0;class#Tokenizer#0" expanded="false" />
+            <element signature="method#showTokens#0;class#Tokenizer#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Node/StmtListTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="36" column="34" lean-forward="true" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+          <folding>
+            <element signature="method#addStmt#0;class#StmtListTree#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Node/StmtTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="70" column="9" lean-forward="true" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Node/IfTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding>
+            <element signature="method#grow#0;class#IfTree#0" expanded="false" />
+            <element signature="method#run#0;class#IfTree#0" expanded="false" />
+            <element signature="method#print#0;class#IfTree#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Node/WhileTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="28" column="18" lean-forward="true" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+          <folding>
+            <element signature="method#grow#0;class#WhileTree#0" expanded="false" />
+            <element signature="method#run#0;class#WhileTree#0" expanded="false" />
+            <element signature="method#print#0;class#WhileTree#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Node/AssignTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="method#grow#0;class#AssignTree#0" expanded="false" />
+            <element signature="method#run#0;class#AssignTree#0" expanded="false" />
+            <element signature="method#print#0;class#AssignTree#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Node/ProgramTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="36" column="5" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="36" selection-end-column="5" />
+          <folding>
+            <element signature="method#grow#0;class#ProgramTree#0" expanded="false" />
+            <element signature="method#run#0;class#ProgramTree#0" expanded="false" />
+            <element signature="method#print#0;class#ProgramTree#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Node/Tree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="12" column="69" lean-forward="false" selection-start-line="12" selection-start-column="69" selection-end-line="12" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Node/ConstTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="51" column="18" lean-forward="false" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
+          <folding>
+            <element signature="method#grow#0;class#ConstTree#0" expanded="false" />
+            <element signature="method#run#0;class#ConstTree#0" expanded="false" />
+            <element signature="method#print#0;class#ConstTree#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Node/CurrentTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="51" column="26" lean-forward="false" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
+          <folding>
+            <element signature="method#grow#0;class#CurrentTree#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Node/OpponentTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="57" column="33" lean-forward="false" selection-start-line="57" selection-start-column="33" selection-end-line="57" selection-end-column="33" />
+          <folding>
+            <element signature="method#grow#0;class#OpponentTree#0" expanded="false" />
+            <element signature="method#print#0;class#OpponentTree#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Runtime/Runner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
+        <state relative-caret-position="350">
           <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -704,22 +622,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Node/OpponentTree.java">
+    <entry file="file://$PROJECT_DIR$/src/Runtime/Program.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="57" column="9" lean-forward="true" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
+        <state relative-caret-position="-181">
+          <caret line="18" column="43" lean-forward="true" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
           <folding>
-            <element signature="method#grow#0;class#OpponentTree#0" expanded="false" />
-            <element signature="e#1635#1651#0" expanded="false" />
-            <element signature="method#print#0;class#OpponentTree#0" expanded="false" />
+            <element signature="method#Program#0;class#Program#0" expanded="false" />
+            <element signature="method#run#1;class#Program#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entry/Cmd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="initializer##0;class#Cmd#0" expanded="false" />
+            <element signature="method#Cmd#0;class#Cmd#0" expanded="false" />
+            <element signature="method#execute#0;class#Cmd#0" expanded="false" />
+            <element signature="method#load#0;class#Cmd#0" expanded="false" />
+            <element signature="method#list#0;class#Cmd#0" expanded="false" />
+            <element signature="method#show#0;class#Cmd#0" expanded="false" />
+            <element signature="method#run#0;class#Cmd#0" expanded="false" />
+            <element signature="method#battle#0;class#Cmd#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Exception/CmdException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Exception/CompileException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Exception/RunningException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Entry/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="22" column="45" lean-forward="true" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+        <state relative-caret-position="150">
+          <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
           <folding />
         </state>
       </provider>

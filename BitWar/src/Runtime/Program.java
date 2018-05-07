@@ -9,16 +9,17 @@ import java.util.Map;
 public class Program {
     //语法树
     private ProgramTree programTree;
+    //标识当前玩家信息
     private Map<String, Integer> localVal;
     //单人模式(不需要对手的数据即可运行)
     public static final int SINGLE_RUN = 0;
-    //自己的回合
+    //玩家1回合
     public static final int FIRST_RUN = 1;
-    //对手的回合
+    //玩家2回合
     public static final int SECOND_RUN = 2;
-    //要取得自己的历史回合数
+    //要取得玩家1的历史回合数
     public static final int MY_CURRENT = 1;
-    //要取得对手的历史回合数
+    //要取得玩家2的历史回合数
     public static final int OPPONENT_CURRENT = 2;
 
     //构造函数

@@ -15,7 +15,7 @@ public class ProgramTree  implements Tree {
     //从树根开始根据单词流生长语法树
     @Override
     public void grow(TokenList tokens) throws CompileException{
-        //func-stat -> func id stmt-list endf
+        //program -> func id stmt-list endf
         //句子以 func 为开始符号
         if(!tokens.read().equals("func")) throw new CompileException("not start with 'func'");
         //tokens.read() 读取下一个单词
