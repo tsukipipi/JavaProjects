@@ -18,7 +18,6 @@ public class TokenJudge {
         return token.matches("[0-9]+");
     }
 
-    //判断是不是一个id
     public static boolean isId(String token){
         return !limits.contains(token) && token.matches("[a-zA-Z][a-zA-Z0-9]*");
     }

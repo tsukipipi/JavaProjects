@@ -24,6 +24,7 @@ public class Program {
     //构造函数
     public Program(ProgramTree programTree) {
         this.programTree = programTree;
+        //保存当前进行对战的玩家信息
         this.localVal = new HashMap<>();
     }
 

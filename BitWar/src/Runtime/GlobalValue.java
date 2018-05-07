@@ -31,6 +31,7 @@ public class GlobalValue {
         return globalVal.get(id);
     }
 
+    //判断globalval是否包含 id
     public static boolean contain(String id){
         return globalVal.containsKey(id);
     }
@@ -40,6 +41,7 @@ public class GlobalValue {
         globalVal.clear();
     }
 
+    //返回所有编译好的语法树
     public static Map<String, Program> getPrograms(){
         return programs;
     }

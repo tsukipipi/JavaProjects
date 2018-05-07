@@ -1,8 +1,15 @@
 func t3
+
     if current = 1
+
     then
+
         return 1
+
     else
+
         return opponent(current-1)
+
     endi
+
 endf

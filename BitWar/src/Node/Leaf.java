@@ -22,7 +22,7 @@ public class Leaf implements Tree{
         grow(null);
     }
 
-    //获得叶子的值
+    //获得叶子的值 id / num
     public String getValue() {
         return value;
     }

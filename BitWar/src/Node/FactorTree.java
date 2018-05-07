@@ -68,6 +68,7 @@ public class FactorTree implements Tree{
     public Integer run(Map<String, Integer> localVal) throws RunningException {
         switch (getCondition()){
             case "exp": return exp.run(localVal);
+            //id / num
             case "value": return value.run(localVal);
             case "random": return random.run(localVal);
             case "const": return con.run(localVal);

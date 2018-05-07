@@ -7,7 +7,7 @@ import java.util.*;
 
 @SuppressWarnings("all")
 public class BattleEntry {
-    //记录对战分数
+    //记录全部策略对战时的分数
     private static Map<String, Integer> pointCounter = new HashMap<>();
 
     //全部策略进行对战
@@ -93,8 +93,8 @@ public class BattleEntry {
         }
         //record:true
         if(record){
-            System.out.println(s1 + " vs " + s2 + ": " + point1 + "\t"+point2);
-            //更新比分
+            System.out.println(s1 + " vs " + s2 + ": " + point1 + "\t"+ point2);
+            //更新比分(累加比分)
             pointCounter.put(s1, pointCounter.get(s1) + point1);
             pointCounter.put(s2, pointCounter.get(s2) + point2);
         }

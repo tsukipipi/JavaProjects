@@ -26,6 +26,7 @@ public class WhileTree implements Tree{
             throw new CompileException("while-stmt is not finished by 'endw'");
     }
 
+    //运行当前策略对应的语法树
     @Override
     public Integer run(Map<String, Integer> localVal) throws RunningException {
         while (exp.run(localVal)!=0){

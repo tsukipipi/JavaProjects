@@ -5,8 +5,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String [] args){
-
-        System.out.println("          ******   欢迎来到比特大战   ******          ");
+        System.out.println("          ******   welcome to bitwar   ******          ");
         Scanner scanner = new Scanner(System.in);
         while (true) {
             System.out.println("=====================================================");
@@ -24,7 +23,7 @@ public class Main {
             String line = scanner.nextLine();
             if (line.equals("exit"))
             {
-                System.out.println("exit system! bye!");
+                System.out.println("          ******   exit system! bye!   ******          ");
                 break;
             }
             Cmd cmd = new Cmd(line);

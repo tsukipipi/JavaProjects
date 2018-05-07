@@ -77,6 +77,7 @@ public class Cmd {
         System.out.println("result: "+runner.run(target));
     }
 
+    //进行对战
     private void battle() throws CmdException, RunningException{
         //两个策略对战
         if(cmd.size()==4){

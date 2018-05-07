@@ -35,6 +35,7 @@ public class Tokenizer {
         return new TokenList(tokens);
     }
 
+    //输出单词流
     public static void showTokens(TokenList list){
         List<String> tokens = list.getTokens();
         for(String token:tokens){
